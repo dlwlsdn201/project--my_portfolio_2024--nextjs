@@ -10,7 +10,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -18,7 +18,11 @@
       }
     ],
     "paths": {
-      "@components/*": ["./src/*"]
+      "@entities/*": ["./src/entities/*"],
+      "@features/*": ["./src/features/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@widgets/*": ["./src/widgets/*"],
+      "@pages/*": ["./src/pages/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
