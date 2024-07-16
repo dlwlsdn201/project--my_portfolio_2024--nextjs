@@ -12,6 +12,10 @@ const nextConfig = {
     domains: ["placehold.co"],
   },
 
+  compiler: {
+    styledComponents: true,
+  },
+
   async redirects() {
     return [
       {

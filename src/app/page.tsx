@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "웹 제목",
   description: "Get started with Next.js",
 };
 
