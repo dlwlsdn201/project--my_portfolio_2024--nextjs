@@ -11,6 +11,17 @@ const nextConfig = {
   images: {
     domains: ["placehold.co"],
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/profile",
+        permanent: true,
+      },
+    ];
+  },
+
   // Adding TypeScript path mappings
   webpack(config) {
     config.resolve.alias = {
