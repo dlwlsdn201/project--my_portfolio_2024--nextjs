@@ -1,4 +1,4 @@
-import { SectionTitle } from "@shared/ui/Title";
+import { SectionTitle } from "@shared/ui/title";
 
 export const ProfileBio = () => {
   return (
