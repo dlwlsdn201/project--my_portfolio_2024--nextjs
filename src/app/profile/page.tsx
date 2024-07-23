@@ -4,8 +4,11 @@ import {
   UserLocation,
   UserLinks,
 } from "@entities/user/ui";
-import { ProfileBio, ProfileInterests } from "@features/profiles";
+import InterestWidget from "@widgets/About/ui/InterestWidget";
+import IntroduceWidget from "@widgets/About/ui/IntroduceWidget";
 import { Button } from "primereact/button";
+import LocationWidget from "@widgets/About/ui/LocationWidget";
+import LinkWidget from "@widgets/About/ui/LinkWidget";
 
 const ProfilePage = () => {
   return (
@@ -18,20 +21,10 @@ const ProfilePage = () => {
             <Button label='Follow' className='p-button-primary' />
           </div>
         </header>
-        <ProfileBio />
-        <ProfileInterests />
-        <section className='mb-10'>
-          <h2 className='text-xl font-semibold mb-4'>Pronouns</h2>
-          <UserPronouns />
-        </section>
-        <section className='mb-10'>
-          <h2 className='text-xl font-semibold mb-4'>Location</h2>
-          <UserLocation />
-        </section>
-        <section className='mb-10'>
-          <h2 className='text-xl font-semibold mb-4'>Links</h2>
-          <UserLinks />
-        </section>
+        <IntroduceWidget />
+        <InterestWidget />
+        <LocationWidget />
+        <LinkWidget />
       </main>
     </div>
   );

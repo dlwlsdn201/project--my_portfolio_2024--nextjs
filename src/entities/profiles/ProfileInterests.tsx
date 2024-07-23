@@ -2,7 +2,7 @@ import { SectionTitle } from "@shared/ui/title";
 
 export const ProfileInterests = () => {
   return (
-    <section className='mb-10'>
+    <>
       <SectionTitle>Interests</SectionTitle>
       <div className='flex flex-wrap gap-2'>
         <span className='bg-gray-200 py-1 px-3 rounded-full'>
@@ -22,6 +22,6 @@ export const ProfileInterests = () => {
         </span>
         <span className='bg-gray-200 py-1 px-3 rounded-full'>Web Design</span>
       </div>
-    </section>
+    </>
   );
 };
