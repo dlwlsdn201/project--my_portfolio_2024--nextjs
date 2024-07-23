@@ -1,4 +1,6 @@
-import { Inter, Epilogue } from "next/font/google";
+"use client";
+
+import { Epilogue } from "next/font/google";
 import "./globals.css";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
@@ -6,6 +8,7 @@ import "primeicons/primeicons.css";
 
 import HeaderWidget from "@widgets/common/HeaderWidget";
 import StyledComponentsRegistry from "./lib/registry";
+import { RootContainer } from "./layout.styled";
 
 // const inter = Inter({ subsets: ["latin"] });
 const epilogue = Epilogue({ subsets: ["latin"] }); // Epilogue is a Google Font
@@ -21,12 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={epilogue.className}>
-        <StyledComponentsRegistry>
-          <HeaderWidget />
-          <div id='container'>{children}</div>
-        </StyledComponentsRegistry>
-      </body>
+      <StyledComponentsRegistry>
+        <body className={epilogue.className}>
+          <RootContainer id='container'>
+            <HeaderWidget />
+            {children}
+          </RootContainer>
+        </body>
+      </StyledComponentsRegistry>
     </html>
   );
 }

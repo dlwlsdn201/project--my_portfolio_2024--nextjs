@@ -1,11 +1,7 @@
 import { Header } from "@shared/ui/header";
 
 const HeaderWidget = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <Header />;
 };
 
 export default HeaderWidget;
