@@ -14,10 +14,10 @@ import {
 } from "./style/header.styled";
 
 const items = [
-  { label: "About" },
-  { label: "Resume" },
-  { label: "Portfolio" },
-  { label: "Blog" },
+  { label: "Home", url: "/home" },
+  { label: "Comment", url: "/comment" },
+  { label: "Album", url: "/album" },
+  { label: "Projects", url: "/projects" },
 ];
 
 export const Header = () => {

@@ -20,8 +20,8 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/profile",
-        permanent: true,
+        destination: "/home",
+        permanent: false,
       },
     ];
   },
