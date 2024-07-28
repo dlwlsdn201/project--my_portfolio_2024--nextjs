@@ -1,17 +1,17 @@
 import { ButtonProps, Button as PrimeButton } from "primereact/button";
 
-export const PrimaryButton = ({
+export const SharedPrimaryButton = ({
   label,
   icon,
   className = "",
   onClick,
-}: ButtonProps) => {
+}: ButtonProps): React.ReactElement => {
   return (
     <PrimeButton
       label={label}
       icon={icon}
-      className={className}
+      className={`break-keep m-0 ${className}`}
       onClick={onClick}
-    />
+    ></PrimeButton>
   );
 };

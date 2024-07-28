@@ -1,1 +1,1 @@
-export { PrimaryButton } from "./Primary";
+export { SharedPrimaryButton } from "./Primary";
